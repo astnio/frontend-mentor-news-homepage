@@ -122,10 +122,47 @@ main {
 .section-hero {
   display: grid;
   grid-template-columns: 1fr 1fr;
+
+  margin-bottom: 4rem;
 }
 
 .hero-picture {
   grid-column: span 2;
+
+  margin-bottom: 2rem;
+}
+
+.hero-title {
+  display: flex;
+  align-items: center;
+}
+
+.hero-body {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+
+  gap: 29px;
+
+  height: 100%;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: var(--clr-red-200);
+
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--clr-text-1);
+  letter-spacing: 3px;
+
+  width: 100%;
+  max-width: 185px;
+  min-height: 48px;
 }
 
 /*** Section - Popular ***/
@@ -170,8 +207,22 @@ main {
   font-weight: 700;
 }
 
+.heading-xl {
+  font-size: 56px;
+  font-weight: 800;
+  line-height: 95%;
+}
+
+.heading-l {
+  font-size: 40px;
+}
+
 .heading-md {
   font-size: 32px;
+}
+
+.heading-s {
+  font-size: 20px;
 }
 
 .heading-xs,
