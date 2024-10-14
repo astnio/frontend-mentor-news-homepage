@@ -114,7 +114,7 @@ main {
 .nav-list {
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: 3rem;
 }
 
 /*** Section - Hero ***/
