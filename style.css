@@ -1,0 +1,92 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  width: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  margin: 0;
+  padding: 0;
+
+  min-height: 100vh;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-bottom: 1rem;
+  padding: 1rem;
+
+  width: 100%;
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+
+  gap: 1rem;
+
+  margin-inline: 1rem;
+}
+
+/*** Sections Grids ***/
+
+.section-hero {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.section-new {
+  grid-column: span 1;
+  grid-row: span 2;
+}
+
+.section-popular {
+  grid-column: span 3;
+  grid-row: span 1;
+}
+
+/*** Navigation ***/
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+/*** Section - Hero ***/
+
+.section-hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.hero-picture {
+  grid-column: span 2;
+}
+
+/*** Section - Popular ***/
+
+.popular-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
