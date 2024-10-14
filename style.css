@@ -185,7 +185,6 @@ main {
 .new-posts-list {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: space-between;
 
   gap: 2rem;
@@ -296,12 +295,62 @@ a:hover {
   max-width: 1110px;
 }
 
+/*** Tablet ***/
+@media screen and (max-width: 768px) {
+  .section-hero {
+    grid-column: auto;
+    grid-row: auto;
+    grid-template-columns: auto;
+  }
+
+  /*** Section - Hero ***/
+
+  .hero-picture {
+    grid-column: auto;
+    width: 100%;
+    aspect-ratio: 1;
+  }
+
+  .hero-picture > img {
+    object-fit: cover;
+    height: 100%;
+  }
+}
+
 /*** Mobile ***/
 
 @media screen and (max-width: 1160px) {
-  .max-width {
-    max-width: 343px;
+  /*** Text ***/
+
+  .heading-xl {
+    font-size: 40px;
+    line-height: 100%;
   }
+
+  .heading-l {
+    font-size: 40px;
+  }
+
+  .heading-md {
+    font-size: 32px;
+  }
+
+  .heading-s {
+    font-size: 20px;
+  }
+
+  .heading-xs,
+  h3 {
+    font-size: 18px;
+  }
+
+  .body {
+    font-size: 15px;
+    line-height: 175%;
+    color: var(--clr-text-2);
+  }
+
+  /*** Nav ***/
 
   .nav-list {
     position: fixed;
@@ -327,19 +376,22 @@ a:hover {
     display: none;
   }
 
-  main {
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
+  a.logo {
+    padding-left: 1rem;
   }
 
+  /*** Grid Setting ***/
   .section-hero {
-    grid-column: auto;
-    grid-row: auto;
-    grid-template-columns: auto;
+    margin-bottom: 3rem;
   }
 
-  .hero-picture {
-    grid-column: auto;
+  header {
+    margin-top: 4rem;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
   }
 
   .section-new {
@@ -351,6 +403,16 @@ a:hover {
     grid-column: auto;
     grid-row: auto;
 
-    height: 129px;
+    height: auto;
+
+    margin-bottom: 4rem;
+  }
+
+  /*** Section - Popular ***/
+
+  .popular-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
   }
 }
