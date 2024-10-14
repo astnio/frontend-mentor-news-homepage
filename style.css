@@ -85,7 +85,7 @@ main {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
 
-  gap: 1rem;
+  gap: 2rem;
 
   margin-inline: 1rem;
 }
