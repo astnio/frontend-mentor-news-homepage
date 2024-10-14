@@ -397,9 +397,8 @@ a:hover {
     width: 256px;
 
     padding-left: 1rem;
+    padding-bottom: 6rem;
 
-    /* BELOW IS TEMP */
-    /* display: none; */
     z-index: 200;
   }
 
@@ -410,6 +409,7 @@ a:hover {
 
   .nav-list-item.body {
     font-size: 18px;
+    color: var(--clr-text-1);
   }
 
   .nav-menu-wrapper {
