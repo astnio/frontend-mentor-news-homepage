@@ -163,6 +163,11 @@ main {
   min-height: 48px;
 }
 
+.button:hover {
+  background-color: var(--clr-very-dark-blue);
+  color: var(--clr-off-white);
+}
+
 /*** Section - New ***/
 
 .section-new {
@@ -189,6 +194,10 @@ main {
 
 .new-post-title {
   margin-bottom: 0.8rem;
+}
+
+.new-post-title > a:hover {
+  color: var(--clr-orange-200);
 }
 
 .new-posts-list-item > p.new-post-description {
@@ -276,6 +285,10 @@ h3 {
   font-size: 15px;
   line-height: 175%;
   color: var(--clr-text-2);
+}
+
+a:hover {
+  color: var(--clr-red-200);
 }
 
 /*** Utility ***/
