@@ -376,13 +376,24 @@ a:hover {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.6);
     z-index: 100;
+
+    transition: opacity 0.15s ease-out;
+  }
+
+  .nav-overlay[data-active='true'] {
+    opacity: 1;
+    pointer-events: all;
+  }
+
+  .nav-overlay[data-active='false'] {
+    opacity: 0;
     pointer-events: none;
   }
 
   .nav-list {
     position: fixed;
     right: 0;
-    top: 50%;
+    top: 0;
 
     display: flex;
     flex-direction: column;
@@ -390,7 +401,7 @@ a:hover {
     justify-content: center;
     gap: 1rem;
 
-    transform: translateY(-50%);
+    transform: translateX(100%);
 
     background-color: var(--clr-off-white);
 
@@ -401,10 +412,12 @@ a:hover {
     padding-bottom: 6rem;
 
     z-index: 200;
+
+    transition: transform 0.25s ease-out;
   }
 
   .nav-menu-button {
-    position: fixed;
+    position: absolute;
     display: inline-block;
     z-index: 300;
   }

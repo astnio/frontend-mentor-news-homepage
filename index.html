@@ -33,15 +33,16 @@
             alt="Company Logo" />
         </picture>
       </a>
-      <button
-        class="nav-menu-button"
-        data-nav-menu-open="true">
+      <button class="nav-menu-button">
         <img
+          class="nav-menu-button-icon"
           src="./assets/images/icon-menu.svg"
-          alt="Open Menu Icon" />
+          alt="Close Menu Icon" />
       </button>
       <nav class="nav">
-        <div class="nav-overlay"></div>
+        <div
+          data-active="false"
+          class="nav-overlay"></div>
         <ul class="nav-list">
           <li class="nav-list-item body">
             <a
