@@ -295,3 +295,62 @@ a:hover {
 .max-width {
   max-width: 1110px;
 }
+
+/*** Mobile ***/
+
+@media screen and (max-width: 1160px) {
+  .max-width {
+    max-width: 343px;
+  }
+
+  .nav-list {
+    position: fixed;
+    right: 0;
+    top: 50%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 1rem;
+
+    transform: translateY(-50%);
+
+    background-color: var(--clr-off-white);
+
+    height: 100%;
+    width: 80%;
+
+    padding-left: 1rem;
+
+    /* BELOW IS TEMP */
+    display: none;
+  }
+
+  main {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+
+  .section-hero {
+    grid-column: auto;
+    grid-row: auto;
+    grid-template-columns: auto;
+  }
+
+  .hero-picture {
+    grid-column: auto;
+  }
+
+  .section-new {
+    grid-column: auto;
+    grid-row: auto;
+  }
+
+  .section-popular {
+    grid-column: auto;
+    grid-row: auto;
+
+    height: 129px;
+  }
+}
