@@ -28,8 +28,7 @@ function adjustMenu() {
     navOverlay.dataset.active = 'false';
     navButtonIcon.src = './assets/images/icon-menu.svg';
     navButton.style.position = 'absolute';
-  } else {
-    if (!menuActive) {
+  } else if (!menuActive) {
       navList.style.transform = 'translateX(100%)';
     }
   }
